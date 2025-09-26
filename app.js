@@ -679,7 +679,7 @@ function initializeScrollAnimations() {
     }, observerOptions);
     
     // Observe elements
-    document.querySelectorAll('.service-card, .pricing-card, .portfolio-item, .team-member, .stat-item, .skill-item').forEach(el => {
+    document.querySelectorAll('.service-card, .pricing-card, .portfolio-item, .team-member, .stat-item, .skill-item, .why-us-card').forEach(el => {
         observer.observe(el);
     });
 }
