@@ -1359,6 +1359,55 @@ section {
     line-height: 1.6;
 }
 
+/* Why Choose Us Section */
+.why-us {
+    background: var(--color-bg-7);
+}
+
+.why-us-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-32);
+}
+
+.why-us-card {
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    padding: var(--space-32);
+    border: 1px solid var(--color-card-border);
+    transition: all 0.3s var(--ease-standard);
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.why-us-card.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.why-us-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-primary);
+}
+
+.why-us-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-20);
+    display: block;
+}
+
+.why-us-title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--space-12);
+}
+
+.why-us-description {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
 /* About Section */
 .about {
     background: var(--color-bg-3);
